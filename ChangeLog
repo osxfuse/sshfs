@@ -2,6 +2,8 @@
 
 	* Add -o cache_max_size=N option to let users tune the maximum
 	size of the cache in number of entries.
+	* Add -o cache_clean_interval=N and -o cache_min_clean_interval=N
+	options to let users tune the cleaning behavior of the cache.
 
 2014-01-14  Miklos Szeredi <miklos@szeredi.hu>
 
