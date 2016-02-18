@@ -303,6 +303,8 @@ static const char *ssh_opts[] = {
 	"ConnectTimeout",
 	"ControlMaster",
 	"ControlPath",
+	"ForwardAgent",
+	"ForwardX11",
 	"GlobalKnownHostsFile",
 	"GSSAPIAuthentication",
 	"GSSAPIDelegateCredentials",
