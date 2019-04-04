@@ -52,6 +52,9 @@ To unmount the filesystem:
 
     fusermount -u mountpoint
 
+In case you get an error since `fusermount` does not exist on macOS -
+You can unmount FUSE volume by running `umount /path/to/mountpoint` in Terminal,
+or pressing the eject button in Finder.
 
 Installing
 ==========
