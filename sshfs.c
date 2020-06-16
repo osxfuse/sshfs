@@ -1824,7 +1824,9 @@ static void *sshfs_init(void)
 #if FUSE_VERSION >= 26
 	/* Readahead should be done by kernel or sshfs but not both */
 	if (conn->async_read)
-		sshfs.sync_read = 1;
+		// Force async even if kernel claims its doing async.
+		// MacOS, see https://github.com/osxfuse/sshfs/issues/57
+		sshfs.sync_read = 0;
 #endif
 
 	if (!sshfs.delay_connect)
